@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rlData"
+            android:paddingBottom="0dp">
+
+            <TextView
+                android:id="@+id/tvInfo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registre el valor de intensidad luminica y su distancia al foco"
+                android:textColor="@color/Black"
+                />
+
+            <LinearLayout
+                android:id="@+id/llSensor1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvInfo1"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:divider="?android:dividerHorizontal"
+                android:orientation="horizontal"
+                android:showDividers="middle">
+
+
+                <Button
+                    android:id="@+id/btnSensor1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="LECTURA SENSOR LX1"
+                    android:textColor="@color/Black" />
+
+                <TextView
+                    android:id="@+id/sensorView1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="Lux"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/Black"
+                    android:textColorHint="@color/Gray" />
+
+                <TextView
+                    android:id="@+id/tvLux1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    android:text="Lux"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/Black" />
+
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/etDistancia1"
+                android:layout_below="@+id/llSensor1"
+                android:hint="Ingrese la distancia en metros"
+                android:inputType="number|phone"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="METROS"
+
+                android:layout_toRightOf="@+id/etDistancia1"
+                android:layout_below="@+id/llSensor1"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/Black" />
+
+            <TextView
+                android:id="@+id/tvInfo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_below="@+id/etDistancia1"
+                android:text="Registre el valor de intensidad luminica y su distancia al foco"
+                android:textColor="@color/Black"
+                />
+
+            <LinearLayout
+                android:id="@+id/llSensor2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvInfo2"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:divider="?android:dividerHorizontal"
+                android:orientation="horizontal"
+                android:showDividers="middle">
+
+
+                <Button
+                    android:id="@+id/btnSensor2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="LECTURA SENSOR LX2"
+                    android:textColor="@color/Black" />
+
+                <TextView
+                    android:id="@+id/sensorView2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="Lux"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/Black"
+                    android:textColorHint="@color/Gray" />
+
+                <TextView
+                    android:id="@+id/tvLux2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    android:text="Lux"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/Black" />
+
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/etDistancia2"
+                android:layout_below="@+id/llSensor2"
+                android:hint="Ingrese la distancia en metros"
+                android:inputType="number|phone"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="METROS"
+                android:id="@+id/mt"
+                android:layout_toRightOf="@+id/etDistancia1"
+                android:layout_below="@+id/llSensor2"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/Black" />
+
+            <LinearLayout
+                android:id="@+id/llEstimated"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etDistancia2"
+
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:divider="?android:dividerHorizontal"
+                android:orientation="horizontal"
+                android:showDividers="middle">
+
+
+                <Button
+                    android:id="@+id/btnEsperado"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="ESPERADO"
+                    android:textColor="@color/Black" />
+
+                <TextView
+                    android:id="@+id/sensorEstimated"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="Lux"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/Black"
+                    android:textColorHint="@color/Gray" />
+
+                <TextView
+                    android:id="@+id/tvLux3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    android:text="Lux"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/Black" />
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llEstimated"
+
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:divider="?android:dividerHorizontal"
+                android:orientation="horizontal"
+                android:showDividers="middle">
+
+
+
+
+                <TextView
+                    android:id="@+id/tvPorcentaje"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="ERROR"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/Black"
+                    android:textColorHint="@color/Gray" />
+
+
+
+                <TextView
+                    android:id="@+id/tvError"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    android:text="% Error"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/Black" />
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnAction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_toEndOf="@+id/etDistancia1"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="APLICACION"
+                android:textColor="@color/Black" />
+
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llError"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:text="LIMPIAR"
+                android:textColor="@color/Black"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>
